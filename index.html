@@ -9,19 +9,27 @@
 </head>
 
 <body> 
+  
   <div>
   <button id="btn1" onclick="ShowDate();">Show Date </button>
  <p id="pDate">This is where the date will show</p>
-    </div>
+  </div>
 
-  <div>
+  <div onmouseover="this.style.backgroundColor='red'" onmouseout="this.style.backgroundColor='white'">
     <p>This is where the text will change to uppercase:</p>
     <input type="text" id="fname" onkeydown="upperCase()">
     <br><br>
   </div>
+  
   <div style="border:3px solid blue;height:50px;" id="divA">
     Inside the Div A element
+    
   </div>
+
+  <p id="PARENT">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <b id="CHILD">ullamco</b> laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolo
+  </p>
+  
   <script src="script.js"></script>
 </body>
 

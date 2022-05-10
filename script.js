@@ -29,3 +29,13 @@ function changeTextOutA(){
 function changeTextClickA(){
   document.getElementById("divA").innerHTML="Text changed after click event !"
 }
+
+// Event bubbling : child element events get triggered 1st and get propagated upwards towards the parent elements
+// Event Capturing :setting the useCapture parameter to true would mean the events are propagated from parent to child which is called event capturing
+document.getElementById("PARENT").addEventListener("click",function(){
+  alert('I am the PARENT');
+},true)
+
+document.getElementById("CHILD").addEventListener("click",function(){
+  alert('I am the CHILD');
+},true)
